@@ -135,6 +135,6 @@ class __TwigTemplate_659ef35d322b22edc0866752e10cb41585ed8619cf6ca3103b4d357a006
         {% endfor %}
     </tbody>
 </table>
-", "@WebProfiler/Profiler/bag.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
+", "@WebProfiler/Profiler/bag.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/bag.html.twig");
     }
 }

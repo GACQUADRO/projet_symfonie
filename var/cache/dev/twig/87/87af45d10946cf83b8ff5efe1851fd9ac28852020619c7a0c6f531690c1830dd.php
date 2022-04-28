@@ -447,6 +447,6 @@ class __TwigTemplate_41ab1aa6d35477a64a4cd36d3b80c75afea938bfa40ef5c7e47bd942e5d
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

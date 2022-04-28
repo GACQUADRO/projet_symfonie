@@ -81,6 +81,6 @@ class __TwigTemplate_2fb5d50d982f0b3b79d644058eaed4e121414768bdbbf2516e2450284fe
     public function getSourceContext()
     {
         return new Source("{% block panel '' %}
-", "@WebProfiler/Profiler/ajax_layout.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
+", "@WebProfiler/Profiler/ajax_layout.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/ajax_layout.html.twig");
     }
 }

@@ -1671,6 +1671,6 @@ class __TwigTemplate_4fe5d649897682f085aa7623cef00694b1fbe6eb35f132a9dde2323b72a
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

@@ -171,6 +171,6 @@ class __TwigTemplate_25e94aec427f5f5106b9c9d865eab7483f2112fa442b6d0b5c36112bc91
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

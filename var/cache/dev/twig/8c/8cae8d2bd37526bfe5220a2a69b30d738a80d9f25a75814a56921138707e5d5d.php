@@ -557,6 +557,6 @@ class __TwigTemplate_dd44fa0114c26d54e0ff3abd30e769e4fc76a67788f8d41d28b3ae6e2e1
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Collector/http_client.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/http_client.html.twig");
+", "@WebProfiler/Collector/http_client.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/http_client.html.twig");
     }
 }

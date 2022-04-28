@@ -71,6 +71,6 @@ class __TwigTemplate_e40cfbc13d89ecfe611f7dd0bcbe837d41110dc1e7cc63f213f89b23353
     public function getSourceContext()
     {
         return new Source("{% extends \"@email/zurb_2/notification/body.txt.twig\" %}
-", "@email/default/notification/body.txt.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.txt.twig");
+", "@email/default/notification/body.txt.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.txt.twig");
     }
 }

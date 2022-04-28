@@ -760,6 +760,6 @@ class __TwigTemplate_86cb9a76040f9cbb3b95d6eeaf4ac0de8ca8ec553a15b87ebcd8b1db537
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/mailer.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/mailer.html.twig");
+", "@WebProfiler/Collector/mailer.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/mailer.html.twig");
     }
 }

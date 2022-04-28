@@ -194,6 +194,6 @@ class __TwigTemplate_60d60682181caaec1fff0d92644487e7f3738db0127ff1d988389d19b80
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/templates/base.html.twig");
+", "base.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/templates/base.html.twig");
     }
 }

@@ -642,6 +642,6 @@ class __TwigTemplate_0aaef2b1f3da6eaa5b1aef6b0b5655ff6f3bd4e1def846bd67d86bfbf6a
         }());
     </script>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/layout.html.twig");
     }
 }

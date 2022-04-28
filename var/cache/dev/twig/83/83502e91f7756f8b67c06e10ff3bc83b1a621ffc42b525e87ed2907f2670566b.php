@@ -2080,6 +2080,6 @@ class __TwigTemplate_0e67eed62034368a59647a0b0c0e3e317c57a4cde61479f10f91da7ffd1
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/form.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
+", "@WebProfiler/Collector/form.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
     }
 }

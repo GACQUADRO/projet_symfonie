@@ -644,6 +644,6 @@ class __TwigTemplate_10075bd1141ece0078234e6255fa3fcb979b2bfd517b1c096d103a4a47a
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/notifier.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/notifier.html.twig");
+", "@WebProfiler/Collector/notifier.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/notifier.html.twig");
     }
 }

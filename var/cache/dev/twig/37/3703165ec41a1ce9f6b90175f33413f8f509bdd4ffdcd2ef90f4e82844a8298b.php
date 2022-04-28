@@ -607,6 +607,6 @@ $context["key"] == "hit_read_ratio")) {
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/cache.html.twig", "/Users/gregoire/Desktop/test/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/cache.html.twig");
+", "@WebProfiler/Collector/cache.html.twig", "/Users/gregoire/Desktop/dossier sans titre/projet_symfonie/vendor/symfony/web-profiler-bundle/Resources/views/Collector/cache.html.twig");
     }
 }
