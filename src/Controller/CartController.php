@@ -52,7 +52,7 @@ class CartController extends AbstractController
         return $this->redirectToRoute('app_cart');
     }
 
-    #[Route('/cart/add/{id}', name: 'cart_add')]
+    #[Route('/cart/ad', name: 'cart_add')]
     public function addOne($id, CartService $cs)
     {
 
