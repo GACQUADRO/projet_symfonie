@@ -18,28 +18,60 @@
 					<th></th>
 				</tr>
 			</thead>
-            <tbody>
-                {% for item in items %}
-                    <tr>
-                        <td>{{ item.produit.nom }}</td>
-                        <td>{{ item.produit.prix }}$</td>
-                        <td>{{ item.quantity }}</td>
-                        <td>{{ item.produit.prix * item.quantity }}$</td>
-                        <td>
-                            <a href="{{ path('cart_remove', {id: item.produit.id}) }}" class="btn-sm btn-danger">
-                                <i class="fas fa-trash"></i>
-                            </a>
-                        </td>
-                    </tr>     
-                {% endfor %}
-            
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" class="text-end">Total :</td>
-                    <td>{{ total }}$</td>
-                </tr>
-            </tfoot>
+			<tbody>
+				{% for item in items %}
+					<tr>
+						<td>{{ item.produit.nom }}</td>
+						<td>{{ item.produit.prix }}$</td>
+						<td>{{ item.quantity }}</td>
+						<td>{{ item.produit.prix * item.quantity }}$</td>
+						<td>
+							<div class="container">
+								<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+									<div class="col">
+										<a href="{{ path('cart_add', {id: item.produit.id}) }}" class="btn-sm btn-success">
+											<i class="fa fa-plus"></i>
+										</a>
+									</div>
+									<div class="col">
+										<a href="{{ path('cart_delete', {id: item.produit.id}) }}" class="btn-sm btn-danger">
+											<i class="fa fa-minus"></i>
+										</a>
+									</div>
+									<div class="col">
+										<a href="{{ path('cart_remove', {id: item.produit.id}) }}" class="btn-sm btn-secondary">
+											<i class="fas fa-trash"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				{% endfor %}
+
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" class="text-end">Total :</td>
+					<td>{{ total }}$</td>
+					<td>
+						<div class="container">
+							<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+								<div class="col">
+								<a href="{{ path('cart_buy') }}" class="btn-sm btn-primary">
+										<i class="fa fa-check"></i>
+									</a>
+								</div>
+								<div class="col">
+									<a href="{{ path('cart_deleteAll') }}" class="btn-sm btn-warning">
+										<i class="fas fa-trash"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
 
 		</table>
 

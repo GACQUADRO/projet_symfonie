@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AjoutArticleController!{% endblock %}
+
+{% block body %}
+
+    <h1>Produit ajout</h1>
+
+    {{ form_start(form_article) }}
+        {{ form_row(form_article.nom) }}
+        {{ form_row(form_article.image) }}
+        {{ form_row(form_article.prix) }}
+        {{ form_row(form_article.description) }}
+        {{ form_row(form_article.categorie_id) }}
+
+
+        <button type="submit" class="btn">Register</button>
+    {{ form_end(form_article) }}
+
+
+
+
+
+{% endblock %}

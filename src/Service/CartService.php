@@ -30,4 +30,21 @@ class CartService {
 
         //dd($session->get('cart'));
     }
+
+    public function delete($id) {
+        $session = $this->rs->getSession();
+        $cart = $session->get('cart', []);
+
+        if (!empty($cart[$id])) {
+            $cart[$id]--;
+        } 
+        if (empty($cart[$id])) {
+            unset($cart[$id]);
+        } 
+
+
+        $session->set('cart', $cart);
+
+        //dd($session->get('cart'));
+    }
 }

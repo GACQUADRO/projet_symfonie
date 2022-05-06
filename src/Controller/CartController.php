@@ -52,13 +52,14 @@ class CartController extends AbstractController
         return $this->redirectToRoute('app_cart');
     }
 
-    #[Route('/cart/ad', name: 'cart_add')]
-    public function addOne($id, CartService $cs)
+    #[Route('/cart/delete/{id}', name: 'cart_delete')]
+    public function delete($id, CartService $cs)
     {
 
-        $cs->add($id);
+        $cs->delete($id);
         return $this->redirectToRoute('app_cart');
     }
+
 
     #[Route('/cart/remove/{id}', name: 'cart_remove')]
     public function remove($id, RequestStack $rs)
@@ -74,4 +75,21 @@ class CartController extends AbstractController
         $session->set('cart', $cart);
         return $this->redirectToRoute('app_cart');
     }
+
+    #[Route('/cart/deleteAll/', name: 'cart_deleteAll')]
+    public function deleteAll(RequestStack $rs)
+    {
+        $session = $rs->getSession();
+        $session->set('cart', []);
+        return $this->redirectToRoute('app_cart');
+    }
+
+    #[Route('cart/buy/', name: 'cart_buy')]
+    public function buy(RequestStack $rs)
+    {
+        $session = $rs->getSession();
+        $session->set('cart', []);
+        return $this->redirectToRoute('app_buybye');
+    }
+
 }
