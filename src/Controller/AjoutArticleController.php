@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\DependencyInjection\Loader\Configurator\security;
 
 class AjoutArticleController extends AbstractController
 {
@@ -19,6 +20,12 @@ class AjoutArticleController extends AbstractController
         $produit = new Produit();
         $form = $this->createForm(AjoutArticleType::class, $produit);
         $form->handleRequest($request);
+
+
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        $produit->setUserId($user);
+
+        
 
         if ($form->isSubmitted() && $form->isValid()) {
 
