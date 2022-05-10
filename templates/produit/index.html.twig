@@ -9,18 +9,23 @@
 
 	<div class="row">
 
+
 		{% for produit in produits %}
-			<div class="card mb-3" style="width: 18rem;">
-				<h3 class="card-header">
-					{{ produit.nom }}</h3>
-				<img src=" {{ produit.image }} " alt="Image du produit">
-				<div class="card-body text-end">
-					<a href=" {{ path('cart_add', {id: produit.id}) }} " class="card-link btn btn-primary">Ajouter au panier</a>
+			{% if input == null or input in produit.nom %}
+				<div class="card mb-3" style="width: 18rem;">
+					<h3 class="card-header">
+						{{ produit.nom }}</h3>
+					<img src=" {{ produit.image }} " alt="Image du produit">
+					<div class="card-body text-end">
+					{% if app.user %}
+						<a href=" {{ path('cart_add', {id: produit.id}) }} " class="card-link btn btn-primary">Ajouter au panier</a>
+					{% endif %}
+						<a href="{{ path('app_article', {'id': produit.id}) }}" class="card-link btn btn-primary">Voir l'article</a>
+					</div>
 				</div>
+			{% endif %}
+		{% endfor %}
 
-			</div>
-        {% endfor %}
+	</div>
 
-		</div>
-
-	{% endblock %}
+{% endblock %}

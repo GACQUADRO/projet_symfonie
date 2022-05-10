@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Grégoire le clown
+{% endblock %}
+
+{% block body %}
+
+	<h1 class="text-center my-3">t ou</h1>
+
+	<div class="row">
+        {% for produit in produits %}
+			{% if idInput == produit.id %}
+				<div class="card mb-3" style="width: 18rem;">
+					<h3 class="card-header">
+						{{ produit.nom }}</h3>
+					<img src=" {{ produit.image }} " alt="Image du produit">
+				</div>
+			{% endif %}
+    	{% endfor %}
+
+	</div>
+
+
+{% endblock %}

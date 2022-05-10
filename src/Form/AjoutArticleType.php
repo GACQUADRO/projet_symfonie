@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Produit;
+use App\Entity\Categorie;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -16,7 +17,7 @@ class AjoutArticleType extends AbstractType
             ->add('description')
             ->add('prix')
             ->add('image')
-            ->add('categorie_id')
+            // ->add('categorie_id')
             // ->add('user_id')
         ;
     }

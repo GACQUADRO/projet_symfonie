@@ -8,20 +8,20 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 
-class ProduitController extends AbstractController
+class ArticleController extends AbstractController
 {
-    #[Route('/produit', name: 'app_produit')]
+    #[Route('/article', name: 'app_article')]
     public function index(Request $request, ProduitRepository $repo): Response
     {
         $produit = $repo->findAll();
 
         // dd($request);
-        $input = ($request->query->get('query'));
-        dump($input);
+        $idInput = ($request->query->get('id'));
+        dump($idInput);
 
-        return $this->render('produit/index.html.twig', [
+        return $this->render('article/index.html.twig', [
             'produits' => $produit,
-            'input' => $input
+            'idInput' => $idInput
         ]);
     }
 }
