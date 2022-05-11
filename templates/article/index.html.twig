@@ -6,18 +6,40 @@
 
 {% block body %}
 
-	<h1 class="text-center my-3">t ou</h1>
+	{% for produit in produits %}
+		{% if idInput == produit.id %}
+			<h1 class="text-center my-3">
+				{{ produit.nom}}
+			</h1>
 
-	<div class="row">
-        {% for produit in produits %}
-			{% if idInput == produit.id %}
-				<div class="card mb-3" style="width: 18rem;">
-					<h3 class="card-header">
-						{{ produit.nom }}</h3>
-					<img src=" {{ produit.image }} " alt="Image du produit">
+			<div class="row">
+
+				<div class="card" style="width: 18rem;">
+					<img src=" {{ produit.image }} " class="card-img-top" alt="Image du produit">
+					<div class="card-body">
+						<h5 class="card-title">
+							{{ produit.nom}}
+						</h5>
+						<p class="card-text">{{ produit.description }}</p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Prix : {{ produit.Prix}} $</li>
+						<li class="list-group-item">Vendeur : {{ userName }}</li>
+
+					<div class="card-body">
+						<a href="{{ path('app_produit') }}" class="card-link">Retour</a>
+						<a href="{{ path('cart_add', {id: produit.id}) }} " class="card-link">Ajouter au panier</a>
+					</div>
 				</div>
+
+
+				{# <div class="card mb-3" style="width: 18rem;">
+									<h3 class="card-header">
+										{{ produit.nom }}</h3>
+									<img src=" {{ produit.image }} " alt="Image du produit">
+								</div> #}
 			{% endif %}
-    	{% endfor %}
+		{% endfor %}
 
 	</div>
 

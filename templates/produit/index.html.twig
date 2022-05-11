@@ -20,7 +20,7 @@
 					{% if app.user %}
 						<a href=" {{ path('cart_add', {id: produit.id}) }} " class="card-link btn btn-primary">Ajouter au panier</a>
 					{% endif %}
-						<a href="{{ path('app_article', {'id': produit.id}) }}" class="card-link btn btn-primary">Voir l'article</a>
+						<a href="{{ path('app_article', {'id': produit.id} ) }}" class="card-link btn btn-primary">Voir l'article</a>
 					</div>
 				</div>
 			{% endif %}
