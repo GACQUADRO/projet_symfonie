@@ -2,30 +2,33 @@
 
 {% block title %}Liste des produits
 {% endblock %}
-
 {% block body %}
 
+
 	<h1 class="text-center my-3">Liste des produits</h1>
+	<div class="container">
+		<div class="row text-center ">
 
-	<div class="row">
 
-
-		{% for produit in produits %}
-			{% if input == null or input in produit.nom %}
-				<div class="card mb-3" style="width: 18rem;">
-					<h3 class="card-header">
-						{{ produit.nom }}</h3>
-					<img src=" {{ produit.image }} " alt="Image du produit">
-					<div class="card-body text-end">
-					{% if app.user %}
-						<a href=" {{ path('cart_add', {id: produit.id}) }} " class="card-link btn btn-primary">Ajouter au panier</a>
-					{% endif %}
-						<a href="{{ path('app_article', {'id': produit.id} ) }}" class="card-link btn btn-primary">Voir l'article</a>
+			{% for produit in produits %}
+				{% if input == null or input in produit.nom %}
+					<div class="card mb-3" style="width: 18rem;">
+						<h3 class="card-header">
+							{{ produit.nom }}</h3>
+						<img src=" {{ produit.image }} " alt="Image du produit">
+						<div class="card-body text-center">
+							<div class="btn-group" role="group" aria-label="Basic example">
+								<a href="{{ path('app_article', {'id': produit.id} ) }}" class="card-link btn btn-primary">Voir l'article</a>
+								{% if app.user %}
+									<a href=" {{ path('cart_add', {id: produit.id}) }} " class="card-link btn btn-primary">Ajouter au panier</a>
+								{% endif %}
+							</div>
+						</div>
 					</div>
-				</div>
-			{% endif %}
-		{% endfor %}
-
+				{% endif %}
+			{% endfor %}
+		</div>
 	</div>
+
 
 {% endblock %}

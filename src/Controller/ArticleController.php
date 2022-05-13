@@ -22,24 +22,35 @@ class ArticleController extends AbstractController
         $allUser = $userRepo->findAll();
 
         $idInput = ($request->query->get('id'));
+        if ($idInput > count($produit)) {
+            dump("article inconnu");
+        } else {
 
-        $temp = $repo->find(id: $idInput);
-        $userId = $temp->getUserId()->getId();
 
 
-        $userName =  "";
-        for ($i=0; $i < count($allUser) ; $i++) { 
-            if($allUser[$i]->getId() == $userId) {
-                $userName = $allUser[$i]->getUsername();
+            $temp = $repo->find(id: $idInput);
+            $userId = $temp->getUserId()->getId();
+
+
+            $userName =  "";
+            for ($i = 0; $i < count($allUser); $i++) {
+                if ($allUser[$i]->getId() == $userId) {
+                    $userName = $allUser[$i]->getUsername();
+                }
             }
-        }
-        
 
+
+
+            return $this->render('article/index.html.twig', [
+                'produits' => $produit,
+                'idInput' => $idInput,
+                'userName' => $userName
+
+            ]);
+        }
         return $this->render('article/index.html.twig', [
             'produits' => $produit,
             'idInput' => $idInput,
-            'userName' => $userName
-
         ]);
     }
 }

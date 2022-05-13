@@ -12,26 +12,10 @@
 	{{ form_row(form_article.image) }}
 	{{ form_row(form_article.prix) }}
 	{{ form_row(form_article.description) }}
-  
 
-	{# <form action="form.php" method="post">
-		<div>
-			<label for="categ">Choose a category:</label>
-			<select name="categ" id="categ">
-				{% for categorie in categories %}
-					<option>{{ categorie.titre }}</option>
-				{% endfor %}
 
-			</select>
+	<button type="submit" class="btn">Register</button>
 
-		</div>
-		
-
-         <button type="submit" class="btn">Register</button>
-	</form> #}
-
-    <button type="submit" class="btn">Register</button>
-   
 	{{ form_end(form_article) }}
 
 

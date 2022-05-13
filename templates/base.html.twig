@@ -19,68 +19,78 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
-	<body>
+	<body style="background-image:url('https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000')">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Navbar</a>
+				<a class="navbar-brand" href="{{ path('app_produit') }}">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA+VBMVEX///8tquAtquJ1xeAkqOT///vo9voqrOMUoNf///2w1fL//v/F5Ovl8vUWpd0uqeLO6/EaouD9//huv+QWp9yY0OWu1/Os0e6z1vDC3/H5//+21fOy3OsSqtstq92ExOtBrtqw1uyJzeRTtd9gtuWQze/z/vuPy+Y2q9gop+bz//9/x+VduuKGw+eu1/md0e6ezfNXvONJtdxqu+SBwNJTrNckos5erc+DydhArNJxvNCs2uzY7/Of0Ofi9vDB5umf3eMAl8pQrcmTxtTM7uzN4+lMreVxvs+y3uKq0OByv+pvu+uz0/qPw+Z8yexavdsjnuNpxO0zstI71G2PAAASZ0lEQVR4nO2dj3uayNbHHYQoaCA4SKjEYcwwguE3NGnTmHTv7q13r4365v7/f8x7hnS33WzvfWpuN2ov3/IkiGjnwzkz5xwYSKvVqFGjRo0aNWrUqFGjRo0aNWrUqFGjRo0aNdpSqqr2/t0bg97jWwosivL13fZf6uhCUb+2XTk6w68f1wfT98Gl+rW9XlyDERx5ZSSO+qj39RaJ7V++M2VXvypf2U+9eCNb7Ues0WtTJsrX9nppKb231yGhby5DFLbVr7dI7U3/gP5q1sFfPRbq6Fr/RKgqbbQfhGC/M906V9Rp24wVaJ1o4OPSU+t16Esn7xTx4nFzSz3ummdKq971084jWIc9egq1osf9lFY0E4Ri66cDBz308VtrV1GfOMZfyXgm6wE0ZXTN6pZCF4NfrZ4yUBVAHo2U+VV7oIx64KxqC/xZGUynsH0gmqjWHVLpjVSB2VMpasPHwOt7rcgIYaipaWCnXj0Oif+v7gs98c5LdVPlkXA0mF+PBtN+ENxMoQXT+c1c6Q9vpy31pCvjk/58AOPIMOjDnhfzm76i3J0NB8fD4L0YNVvHv5zfHAMl1ZPB2fnNFDY+EramN0FwIginJ7fB8Bj+H/igMhrNz86+Olz9RYTnLfXttPdeOSZX83lo9tW7a2v20xvTlH9WP1zNiHz1t3et881Ze2beDI6uTfOmddvV2c3funK3D044NN8flVcnikLlzc9/M2fhMXipBV46OLnCR8NuoChHlz8Nw9n1VP3FlMvW9Oeufv5SwQQIpbfK9GraG4wAbqD0Z9075c40oqNpZJjz1ui604aO1Tevpq1Ypq3B3LRu1EHUsU4u/m7JWFX/ab5VBn1ZH6h0hketn2BjS60Jjy1zoAyI2W9tZsFgrs/OFCWWGTj7lfxihNAPUdmWrWlPudGBsze1pKEy1fUbRelb5ok6onJb6Sn9K3OknM9oT5ma1kQdBHIXehLTsTrq6n11dGKac1XsqigM6UdKZIXqoD3btEajchYplXmu3I3h0Kh4xqD/Xhnn/yZv+P46M6Xzo5vutKdiRCAwTgnaKNOuPFRafUufKyMKIWCkjOZ3g1ZkUlWdmuOJqpzLXRiIYr1qvZdnm3dv4tj/AP2wDeNMgOBjayBUrqTFP95s4jhQLj4MWlNLEG5kBmwWdI0Xs6FpBaryBsaUmNSEyIj/RAiDwvQGv2Xy74TD2oaC8Gysn9RDJvRDXdhwqOvHyhqF6oVJ6iArkoqTAL9FurAhEKovSSjiYdBS5yNFicaWILTkCAj1WyDUrZOacKC25ldXJ2piUdjhN8LahoX6XpbPBuKremp9MAbDmXWhRjPwUr3DBjVh6xeTXUytcU1YAnX3xQkhpimv9O4cWMXPJ4TQyrZMVOUrhNAPLbl4DHWPhCo2zyFaCMIInKAlUoJjUx8OLgThABshhE/LeiHCnqLcyDCsteq8Y2O+VVuRPgRP7Jq36qA/tk4GLYass/kxlmdn81i+Hql3XetGGbyddcHsTN60emeWjvv929fTFkQLVb0zN5CaR7Dr4DiU6dmHs9f94+6MzX+1yLClDDtGHL2mVnn8IvFQHb2OcRxjcaRbynTYffOOvhoox1Fcvfv78buqeDdXzrpmd/Ph7rp7NXx/1X138jqON/1f48p/2/rnJsa/DJT3rNsltxfqaBNa3XfXN2AjeGfzy4V614YPV3M4jlfd65N21/pVxMKr5OI6Hn54CcBW7zG9VB89BgaEiwvIyMRWRaSkkFmKymMKqVpPnUIaN7oQSdinzE7kpkqdkUKSUu8qKqsL2NaDPUSu1oNeeAH5H2Rp8CWqenQhPnQxUnujQau1D4l5o0aNGjX6Jh3tTqOXqPLV1ruu1d2R+i9B2FMiubMbSfqHf3Ny77tKabVnaDeS9P5LJDWK2pZ/bEL1hydsASH54Ql3A9gQNoR/CaEkSQ3hYRJKiEgSLIYMQoiAvgfpHhEiAJtJRrFcYowpkg1D+h4RZm8ILcRwEGHSSVxN01xGaBBxjHQw5oETik4H1kI4s10tcam8BkL7fqF7TuK4ab6A9zv/zTi8D4SWVGGEHdedJFlpJqmj2TYlmOeanU4IWzLdOGRCZIRJlE4+LlzNnuS5bWu1UtvOYPU+6+aOzZeG9GzInRMa1cTJAhfH7kRLV0kSJQkPkiQJklWeulpeBulaczLSOVhCyXdtLUluUsDiqevy9dpbe946gz64ipJMy7w8TdPn8u0DoZWLASUAljTN+dqwupZh6TJNeJamWpasMtd1MXp2aNw5IZmxNE8y286XMV6v1iHOfRlzVnIPw4bMtbmXZtbzY//OCSEStnM3xwznGfTAwA046+DEtpOIB/YKx+vUXpWQ4RwsoUQWblZtch5EVbTa8IlNIMYXqbbEq3aURNkqjtLsvwiIOycERVXgJW2XJ2lmB8t1TCSKkySb5GmlZVGyTjAWeSqSYUDd3lv3gdD0VjzK8yhNsmSYRAGTqxUOOPjsbZImq8i+JGiG25jR51QduyGsGyqKB6MO5ASnECyC1drlPM1yNltCgEhSDWdgynQVU8oYi2NEFsb2RtwJIZhCEiWSAQlpR0KMUg7m87LItTGP1uMx4ZivHdvLRfT3iM8ICh+YVMAB2bqi2hGhwZiOxoQCXEh11PGd5c3Kw9mqDbkMzzkkN0vw0yiPsrSkV1ZIYxyPQ72qtk5udkXIU25DRM/SPOVZFgEIznDEIehDxsY5xHk7hbUcO1GWZRj2gTTczk4n8ZaAOyOMlyWPcAUdrCp9ShfYjiAoBAEkMjYkN6md8wiOAXRD8NESlQxHCc54nqNtA8duRpoO4ty9tbPMKyWDQrVL6SW4bIjqFQKvL2EJDUpCiuAN5l/SLNUmp27GSWe7AXVH0YJinFY8q/D/gdlWnHOP556XifLeFnosoRxYnPqHm+I8SdcVeHK4ZcjYUbQolzYuy1X2EHKrY+ikGBML6csJYE006HO/y63PacDC88kplU/tZdHpHAAhwv5izfkafnMIin5+/yC2LgUT/zjWE1t7ojRLGJiaX0J+s1282JENL/lDGJIOMHICxVJuhzMENtSALPPHxuJPhFrFPUp1tlpRebssfAeE0I+MJac+DWPG/TysfIjoZexXDGv3tuto2DDT2lc/c7qax2O8IAUOlvLe90MANDhDMSUPetXmyE8nBCqMUw9hd9n1bHdNJD5JQzNIPzupY2MLF+VCrjLZ2H9CZNAZAoskC4Q4dEoIeshYU2lpj2eJ6/idDnYdCBNfeqk/0/PSDz2DbJl976q26IT2Zewsic7JbMlsz5KX1FjmlrzgldyZhcBL9FP3MyFFC4f/nE/8bUvhnVVPsXtqOw+GIMR0MfFlTA1vCaWDBRWw1JFnkJl/ETU0KlnczRyXIUPaSsaOCA3GXfcjJVZtQxnb4ZJYay6qDUnqGOMxmJl87oe2xiDB4TAKAf2Wst6/yDzoPxFSbLs+/eSlHYtnNaG4HCN1dJAJyk9/l0bNMV2d5kSu39lCuvnqRe64+JOX+ml241Gk81B+uEQSsW1keYEhLmKM+yePOv5i6tb88eX8ZHsdvQDfnwllbwLhL5bAhij3Qllm9sJaclHCk/Gd+l31IoB/9tKUS1e2p+s5efA8jIhVgQ1zGRFG9GO1V+sP3/DpZW977YRQoikm4zy3wIYy9DoIkjrSMTcQzSzrZe4f+M56SojwAyO+Z+lQ03u/KVsR3/bkH4BQIogumI8YeCT/Iqo73sZ22Gx89CMQMp8tyFNCLdXce8+4PDrEOySeEMrMF1YUhKn9pZzs42U2Gu26uc/QU0Lqh6xclJCKhV8mmiQ0LNI93nVrn6M/EiLZ9wleoli2RI1fnxo25HrWBayad7tu7XP0R0LD8BllBcWQ0yDZClmMY6j1ReXYIYT9ACONYbCPG51gFlocL7k44eTaaYQrvOa27U4PfqSB/saYRyWMqLjGPZlk4hq+wARNsmB08DYUhLQsdIyYnvMl03ULFlolPFkyQzbvBrtu7jP05Fxbh4lguAypxS0T+R7nnk9kWYeFVt501619jp5eXStIOyTMhwqYZ7brOLDYGffghX3jHOQTdZ4SllVE/NI3CJT6Nl/7/pKnrgPrdu5Vhz+WgkqfxqzEBoylTFwnNZBFLiuMfUQM/fAzb0G48P2HmEmE67JFIMwjawad0LKsjvRjEPqUzdgiRhb/XDx90toTd0E/qdNHLfFsGihnR73BdnqJm56+RvgR0jbGMiAUF9C+FITFngJS63+PUgdidaCqyhcbv1Xqyzzc5OlcjCqAkBg5kLW5aXqfwg/xC+Te25NXtxPn1RNF+ObVbYSHsLKtTnYzU8HFhKU2kkV9aGvnru3knMTttXfqpFTWGdcgj0s/F49UThxOuvyeyNtpJ2eEgXDh3JpLl9eEbs4XjrsMF4jQsvRZqMcx89KUsuz098tPTMbahMRaLoalraT3XyRFetoPKZ9cZu5jje+kIfIyUy7HYLpVhhfYhQQgu5oZke0GmX0vrEwh83EC7nKy3Ul9aVfXLRh1bdcjzBKEDu/SCvH7LLe1iZsGaxzHsQ/hMmVGuMSZIISKmUxczY63vW6xI0KJWWvXviYMbGhnmcNLtrhJ3wQ4zTCjliXPxARwFsry2lsLT3UWlLLE1daUou20I0IDSnzt3i8Z9ENwPAopKsp85rGY1YU+KiVIzw3KQsOospow9FmmpaTcdtrXrmwINJp9Kgi12+XaG1Oss8IvaSGcEMmUEiIRSQ4LZmtpTVgi4dAxCw+DEJEyP41czmaiwC/IzChipFP2YEm18RgR0xEkA4kraiKeOAt57bqem8WHcoVUwi630omnB5qdr6HZ1z4pCCkNcTK1I9MHYUpkwXhTz6ixHUI1jXczhx7ErC9xZdZzPoY4dxB30nq6jF5gahAmXJCh0C9hzCRQKFdk8ng6fBG4waXEJ/6WgLsjXDo4pPGtv4YQoKVJ7FcwWJaFJRkSLRjxoTqWq01VIc0Wh8AmNl8QtHIO5Do+EPqTxQaY1ngCAA6nrMAeL9jDYiYjJlPMWMdizLK8doFPIQ5e8vKBPOAJ2XaW8M7mYiBuLf9F2XUlol3m01l172YEVx+rioUEbVgYZvyKZe5pYEP1z4uQFRBKMrTtVO+dzcWYMUYKnxKai152WokMPD2F6sn1ugYxcmotMvt2TcTMKMjh/CIORVqz3m660C4JEYp9einj6ufUcW6yzxO8OM0qc2lTK9C0Se7VCY0LXhxT6tMi3JJvl4QGjUOMSsg+baeeufZJp1F1GaQrnkDp9Bv3mhEotogfFtvfpLdDwjEjZVlRUqJlNpk4GhBBTXHvrtLVqcjANTEbWtyJyGNWltg3YhIbW3fDHRJKyCriqoivaUEtcfcFJGq08mwHTDrRnHtx2g2SN0R0nUEXfLjG1zFDB0UIIWNdLqgPYKxEYX1pGOnEc8Ga9kfLkCUxz7KDaFHGYq57xWJ0cISUQtUkhlRpY/x2H4WF7UmGfq/u6Ibi4pJRVEAiAHnOlny7JexIMmNFIdE1Y0iMIYYkqltrmYYdcaVUbEDiAgdlJFwTg81k6ZAIa8iQxUBQCjctxL1NDBEUEibK33ABwQGX16x4kKx1bBQF6jznduddEgonhD4IA85CRg8VIn7qunnJqjIuceZO1n4Yx75E4hhyuALy8mfdZbnju/PADaWioiFmCDO/DLmbZpgiCqwTnzAMFi5nlW8W9NlPA9kxoajnIeqLYA7BkbHLte3a3mXuptygiCzHfgjoVsye/8yBnROCaQyofa+XDPs0hB6Z2fa9nbVh+PT9ktGPBfELip59O/6uCR9lIP9jTMEpSx9felBJaOCqrAg3jD78KxYVofT8R9bsBSEkNBKDyKiXC+442jLOoMYImAE1frEck450+IQ1ZVl5qWMP63ET57br2lFMa7D/6plD+0JoGKTeQdxdymhISPh4nzD6YQhRfedz/SSl2iWlOr35rZE/COGn8URM/fouaHtM+J2Mt4+Ef4kawoawIWwI/ycJv+djIYX2jhAivinmt30v6d3+SwBuRWidHH9XjXYw6+s/E+p3P8LcxP9owx9i9mVDeHhqCBvC/VdD2BDuvxrChnD/1RA2hPuvhrAh3H81hA3h/qshbAj3Xw1hQ7j/aggbwv1XQ9gQ7r8awoZw/9UQNoT7r4awIdx//U8QfuPdg5JxkISKGn37n707UEIsHi7/beoe4txEtXUWDL9Vtwf5dE+A3KLZB/ik5J74Qyjf+vcoFOUwbdioUaNGjRo1atSoUaNGjRo1avSS+n+tu7+eH+rKGgAAAABJRU5ErkJggg==" width="30" height="30" class="d-inline-block align-top" alt="">
+				</a>
 				<button class="navbar-toggler" type="button" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="{{ path('app_produit') }}">Produits</a>
+							<a class="nav-link active" aria-current="page" href="{{ path('app_produit') }}">
+								<i class="fa fa-home"></i>
+							</a>
 						</li>
 						{% if app.user == null %}
 
 							<li class="nav-item">
-								<a class="nav-link active" href="{{ path('app_register') }}">Register</a>
+								<a class="nav-link active" href="{{ path('app_register') }}">
+									<i class="fa fa-user-plus"></i>
+								</a>
 							</li>
 						{% endif %}
 
-							<li class="nav-item active">
-								<a class="nav-link active" href="{{ path('app_login') }}">
-									{% if app.user %}
-										logout
-									{% else %}
-										login
+						<li class="nav-item active">
+							<a class="nav-link active" href="{{ path('app_login') }}">
+								{% if app.user %}
+									Logout
+								{% else %}
+									Login
+								{% endif %}
+							</a>
+						</li>
+						{% if app.user %}
+							<li class="nav-item ">
+								<a class="nav-link active" href="{{ path('app_ajout_article') }}">
+									<i class="fa fa-plus"></i>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active position-relative " aria-current="page" href="{{ path('app_cart') }}">
+									<i class="fa fa-shopping-basket"></i>
+
+									{% set nbProduits = app.session.get('qt') %}
+
+									{% if nbProduits > 0 %}
+										<span class="position-absolute top-80 start-100 translate-middle badge rounded-pill bg-danger">{{ nbProduits }}</span>
 									{% endif %}
 								</a>
 							</li>
-							{% if app.user %}
-								<li class="nav-item ">
-									<a class="nav-link active" href="{{ path('app_ajout_article') }}">Add an artircle</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link active position-relative" aria-current="page" href="{{ path('app_cart') }}">Panier
-
-										{% set nbProduits = app.session.get('qt') %}
-
-										{% if nbProduits > 0 %}
-											<span class="position-absolute top-80 start-100 translate-middle badge rounded-pill bg-danger">{{ nbProduits }}</span>
-										{% endif %}
+						{% endif %}
 
 
-									</a>
-								</li>
-							{% endif %}
-
-						</ul>
-					</div>
+					</ul>
 				</div>
 				<!-- Search form -->
-				<div class="input-group rounded">
-					<form action="produit" method="GET">
-						<input type="search" name="query"/>
-						<input type="submit" value="Search"/>
+
+				<div>
+					<form class="d-flex" action="produit" method="GET">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query"/>
+						<button class="btn btn-outline-success" type="submit">Search</button>
 					</form>
 				</div>
-			</nav>
+			</div>
 
 
-			{% block body %}{% endblock %}
+		</nav>
 
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-		</body>
+
+		{% block body %}{% endblock %}
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</body>
-</html>
+</html></body></html>

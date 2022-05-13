@@ -6,7 +6,7 @@
 {% block body %}
 
 	<h1 class="text-center">Votre Panier</h1>
-
+	<div class="container">
 	{% if items %}
 		<table class="table">
 			<thead>
@@ -78,5 +78,6 @@
 	{% else %}
 		<p>Votre panier est vide</p>
 	{% endif %}
+	</div>
 
 {% endblock %}
